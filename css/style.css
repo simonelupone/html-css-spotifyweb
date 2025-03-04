@@ -1,5 +1,48 @@
+:root {
+    /* colors */
+    --header-color: #080b12;
+    --main-content-color: #141922;
+    --footer-color: #282828;
+    --accent-color: #adff2f;
+
+    /* sizes */
+    --aside-width: 230px;
+    --header-height: 90px;
+    --footer-height: 90px;
+}
+
+/* *************************** */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* utilities */
+
+.d-flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+aside {
+    width: var(--aside-width);
+    height: calc(100vh - var(--footer-height));
+    background: #000;
+}
+
+header {
+    width: calc(100vw - var(--aside-width));
+    height: var(--header-height);
+    background: #ff5d5d;
+}
+
+footer {
+    width: 100vw;
+    height: var(--footer-height);
+    background: #117791;
 }
