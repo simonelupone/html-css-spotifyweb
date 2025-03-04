@@ -12,6 +12,16 @@ Riprodurre il layout di **Spotify Web**, tenendo presente che il **contenuto del
 
 ---
 
+### Screenshots
+
+<img src="./screens/layouts/spotify-lg.png" alt="preview desktop" width="400"/>
+
+<img src="./screens/layouts/spotify-md.png" alt="preview tablet" width="400"/>
+
+<img src="./screens/layouts/spotify-s.png" alt="preview mobile" width="400"/>
+
+<img src="./screens/layouts/spotify-xs.png" alt="preview mobile" width="400"/>
+
 ## 📌 **Consigli per lo sviluppo**  
 
 🛠 Questo esercizio si svolgerà **in più giorni**, quindi:  
