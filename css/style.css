@@ -346,10 +346,6 @@ footer .container {
 }
 
 .controls {
-    width: 100%;
-}
-
-.song-control .controls {
     font-size: 14px;
     color: #fff;
 }
@@ -358,7 +354,7 @@ footer .container {
     font-size: 26px;
 }
 
-.song-control .slider {
+.slider {
     width: 50%;
     height: 4px;
     border-radius: 25px;
