@@ -58,6 +58,10 @@
     gap: 40px;
 }
 
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
 .p-1 {
     padding: 10px;
 }
@@ -339,6 +343,37 @@ footer .container {
 
 .song-control {
     width: calc(100vw - var(--aside-width) * 2 - 40px);
+}
+
+.controls {
+    width: 100%;
+}
+
+.song-control .controls {
+    font-size: 14px;
+    color: #fff;
+}
+
+.song-control .controls .fa-circle-play {
+    font-size: 26px;
+}
+
+.song-control .slider {
+    width: 50%;
+    height: 4px;
+    border-radius: 25px;
+    background: var(--font-color);
+}
+
+.slider-full {
+    width: 25%;
+    height: 100%;
+    background: #fff;
+    border-radius: 25px;
+}
+
+.track-time {
+    font-size: 12px;
 }
 
 /* #endregion Footer */
