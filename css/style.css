@@ -58,6 +58,10 @@
     gap: 40px;
 }
 
+.p-1 {
+    padding: 10px;
+}
+
 .py-1 {
     padding-block: 10px;
 }
@@ -78,6 +82,10 @@
     padding-bottom: 20px;
 }
 
+.m-1 {
+    margin: 10px;
+}
+
 .mt-1 {
     margin-top: 10px;
 }
@@ -93,6 +101,27 @@
 .row {
     display: flex;
     flex-wrap: wrap;
+}
+
+.col-20 {
+    width: 20%;
+    height: 100%;
+}
+
+.col-30 {
+    width: 30%;
+}
+
+.col-60 {
+    width: 60%;
+}
+
+.col-70 {
+    width: 70%;
+}
+
+.border {
+    border: 2px solid pink;
 }
 
 /* #endregion utilities */
@@ -244,7 +273,7 @@ h2 {
 }
 
 .card {
-    max-width: 230px;
+    max-width: 200px;
     margin-top: 10px;
 }
 
@@ -254,18 +283,17 @@ h2 {
 
 .card .description {
     text-align: center;
-    /* padding: 20px; */
 }
 
 .card .title {
     padding-bottom: 10px;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 900;
     color: #fff;
 }
 
 .card .author {
-    font-size: 16px;
+    font-size: 12px;
 }
 
 .popular-artists img {
@@ -274,9 +302,43 @@ h2 {
 
 /* #endregion Main */
 
+/* #region Footer */
 footer {
     width: 100vw;
     height: var(--footer-height);
     background: var(--footer-color);
     z-index: 10;
 }
+
+footer .container {
+    height: 100%;
+}
+
+.current-song,
+.audio-control {
+    width: var(--aside-width);
+}
+
+.current-song {
+    font-size: 12px;
+}
+
+.current-song img {
+    max-width: 42px;
+}
+
+.current-song-title {
+    color: #fff;
+    font-size: 14px;
+}
+
+.current-song-icons i {
+    font-size: 16px;
+    margin-left: 4px;
+}
+
+.song-control {
+    width: calc(100vw - var(--aside-width) * 2 - 40px);
+}
+
+/* #endregion Footer */
