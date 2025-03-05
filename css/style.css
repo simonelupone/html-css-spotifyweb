@@ -38,6 +38,10 @@
     justify-content: space-between;
 }
 
+.justify-end {
+    justify-content: flex-end;
+}
+
 .align-center {
     align-items: center;
 }
@@ -151,11 +155,23 @@ aside {
 
 /* #endregion Aside */
 
+/* #region Header */
 header {
     width: calc(100vw - var(--aside-width));
     height: var(--header-height);
+    padding: 20px;
     background: var(--header-color);
 }
+
+.btn {
+    width: fit-content;
+    padding: 10px;
+    text-transform: uppercase;
+    border: 1px solid var(--font-color);
+    border-radius: 25px;
+}
+
+/* #endregion Header */
 
 main {
     width: calc(100vw - var(--aside-width));
