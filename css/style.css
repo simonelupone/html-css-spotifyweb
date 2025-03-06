@@ -250,6 +250,17 @@ aside {
     object-position: center;
 }
 
+.upper-aside li:hover a,
+.playlist ul li a:hover,
+.playlist>div:hover a,
+.install-app a>div:hover {
+    color: #fff;
+}
+
+.playlist>div:hover .add-playlist-btn {
+    background-color: #fff;
+}
+
 /* xs - <576px */
 @media screen and (min-width: 0) and (max-width: 575px) {
     aside {
@@ -297,6 +308,10 @@ header {
     border-radius: 25px;
     font-size: 0.875em;
     color: #fff;
+}
+
+.btn:hover {
+    transform: scale(1.1);
 }
 
 /* xs - <576px */
@@ -376,6 +391,10 @@ h2,
 
 .popular-artists img {
     border-radius: 50%;
+}
+
+.main-menu li:hover a {
+    color: #fff;
 }
 
 /* md - 768px */
