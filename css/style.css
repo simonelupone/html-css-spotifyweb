@@ -276,7 +276,7 @@ main {
     overflow-y: auto;
 }
 
-main .main-menu {
+.main-menu {
     width: 80%;
     margin-bottom: 30px;
 }
@@ -336,7 +336,17 @@ h2,
 @media screen and (max-width: 768px) {
     .card {
         width: calc(100%/4 - 20px);
+    }
+}
 
+/* sm - 576px */
+@media screen and (max-width: 576px) {
+    .main-menu {
+        width: 100%;
+    }
+
+    .card {
+        width: calc(100%/2 - 20px);
     }
 }
 
@@ -406,6 +416,43 @@ footer .container {
 
 .track-time {
     font-size: 0.75em;
+}
+
+/* sm - 576px */
+@media screen and (max-width: 576px) {
+
+    footer .container .row {
+        width: 100%;
+        gap: 0;
+    }
+
+    .current-song,
+    .audio-control {
+        width: 30%;
+    }
+
+    .current-song-icons {
+        padding: 0;
+    }
+
+    .current-song-icons {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .current-song-subtitle {
+        font-size: .875em;
+    }
+
+    .song-control {
+        width: 40%;
+    }
+
+    .audio-control,
+    .audio-control .controls {
+        gap: 10px;
+    }
 }
 
 /* #endregion Footer */
