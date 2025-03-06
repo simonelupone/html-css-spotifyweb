@@ -8,6 +8,7 @@
 
     /* sizes */
     --aside-width: 14.5rem;
+    --aside-width-xs: 2.125rem;
     --header-height: 5.625rem;
     --footer-height: 5.625rem;
 }
@@ -167,6 +168,10 @@ aside {
     width: 8.125rem;
 }
 
+#logo .logo-small {
+    display: none;
+}
+
 .aside-container {
     height: 100%;
     display: flex;
@@ -245,6 +250,35 @@ aside {
     object-position: center;
 }
 
+/* xs - <576px */
+@media screen and (min-width: 0) and (max-width: 575px) {
+    aside {
+        min-width: fit-content;
+        padding: 10px;
+    }
+
+    #logo {
+        min-height: fit-content;
+        margin-block: 10px;
+    }
+
+    #logo img:first-of-type,
+    .upper-aside-page-link,
+    .lower-aside,
+    .user a>div {
+        display: none;
+    }
+
+    #logo .logo-small {
+        display: initial;
+        width: 1.5rem;
+    }
+
+    .user .install-app {
+        border-bottom: none;
+    }
+}
+
 /* #endregion Aside */
 
 /* #region Header */
@@ -263,6 +297,18 @@ header {
     border-radius: 25px;
     font-size: 0.875em;
     color: #fff;
+}
+
+/* xs - <576px */
+@media screen and (min-width: 0) and (max-width: 575px) {
+    header {
+        width: calc(100vw - var(--aside-width-xs));
+    }
+
+    .btn {
+        padding: 10px 15px;
+        font-size: 0.75em;
+    }
 }
 
 /* #endregion Header */
@@ -347,6 +393,13 @@ h2,
 
     .card {
         width: calc(100%/2 - 20px);
+    }
+}
+
+/* xs - <576px */
+@media screen and (min-width: 0) and (max-width: 575px) {
+    main {
+        width: calc(100vw - var(--aside-width-xs));
     }
 }
 
