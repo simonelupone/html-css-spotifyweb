@@ -35,3 +35,6 @@ Riprodurre il layout di **Spotify Web**, tenendo presente che il **contenuto del
 3️⃣ Aggiungere gli **effetti hover** e gli **stili responsive**.  
 4️⃣ Ottimizzare il codice e rifinire i dettagli.  
 
+## Anteprima
+
+[-> PREVIEW <-](https://simonelupone.github.io/html-css-spotifyweb/)
