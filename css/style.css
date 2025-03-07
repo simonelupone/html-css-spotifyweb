@@ -276,7 +276,8 @@ aside {
     #logo img:first-of-type,
     .upper-aside-page-link,
     .lower-aside,
-    .user a>div {
+    .user a>div,
+    .user-profile div>div {
         display: none;
     }
 
